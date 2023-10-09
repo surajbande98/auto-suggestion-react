@@ -11,7 +11,7 @@ app.use(cors());
 // sample api routes for testing
 app.get('/countries', (req: Request, res: Response) => {
   const query = <string>req.query.query;
-  // mocked data
+  // mocked data..
   const allCountries = <Country[]>countries;
 
   const result = allCountries.filter((country: Country) => {
